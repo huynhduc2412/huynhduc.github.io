@@ -1,0 +1,122 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+/* Container chính */
+.profile-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Ảnh đại diện */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề và bio */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Thông tin cá nhân */
+.info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 15px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.info strong {
+    color: #333;
+}
+
+/* Nút mạng xã hội */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.github {
+    background: #333;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
